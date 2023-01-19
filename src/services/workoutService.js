@@ -1,5 +1,8 @@
+const workoutDAL = require("../database/workoutDAL");
+
 const getAllWorkouts = () => {
-	return;
+	const workouts = workoutDAL.getAllWorkouts();
+	return workouts;
 };
 
 const getWorkout = () => {
